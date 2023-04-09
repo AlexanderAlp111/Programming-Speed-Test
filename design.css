@@ -1,0 +1,129 @@
+  body {
+    font-family: "Arial", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #333333;
+    color: #ffffff;
+  }
+
+  
+  #menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #444444;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  #language,
+#timer {
+  width: 100%;
+  padding: 5px;
+  margin: 10px 0;
+  border: 1px solid #666666;
+  border-radius: 5px;
+  font-size: 14px;
+  appearance: none;
+  background-color: #333333;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+button#start-test {
+  background-color: #4caf50;
+  color: white;
+  font-size: 14px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button#start-test:hover {
+  background-color: #45a049;
+}
+
+button#start-test:disabled {
+  background-color: #a9a9a9;
+  cursor: not-allowed;
+}
+  
+  
+  header {
+    position: absolute;
+    top: 20px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #00ff00;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  select {
+    background-color: #333;
+    border: 1px solid #00ff00;
+    color: #eee;
+    padding: 5px;
+  }
+  
+  button {
+    background-color: #00ff00;
+    color: #222;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #33ff33;
+  } 
+
+  #timer-display {
+    margin-bottom: 10px;
+    color: #00ff00;
+    font-size: 1.2rem;
+  }
+  
+  #code-snippet {
+    color: #aaa;
+    margin-bottom: 10px;
+  }
+  
+  #user-input {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #user-input input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    text-align: center;
+    width: 1ch;
+    font-family: monospace;
+  }  
+
+  .hidden {
+    display: none;
+  }
+
+  .code-snippet > div,
+  #user-input > div {
+  display: inline-block;
+  vertical-align: top;
+  }
